@@ -1,0 +1,609 @@
+[
+  {
+    "id": "luzzati-genova",
+    "name": "Playground Giardini Luzzati",
+    "location": {
+      "city": "Genova, GE",
+      "lat": 44.40461,
+      "lng": 8.93172
+    },
+    "art": {
+      "artist_name": "Gummy Gue",
+      "artist_ig": "https://www.instagram.com/gummy_gue/",
+      "image_url": "https://oss.gooood.cn/uploads/2021/07/014-new-playground-by-gummy-gue-960x640.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "lambro-milano",
+    "name": "Basket Ground Parco Lambro",
+    "location": {
+      "city": "Milano, MI",
+      "lat": 45.49502,
+      "lng": 9.24355
+    },
+    "art": {
+      "artist_name": "Comune di Milano",
+      "image_url": "https://www.milanofree.it/images/stories/eventi/parco-lambro-milanofree.jpg"
+    },
+    "specs": {
+      "hoops": 4,
+      "lighting": true,
+      "surface": "buona"
+    }
+  },
+  {
+    "id": "scampia-napoli",
+    "name": "Playground Scampia (Kobe Bryant Tribute)",
+    "location": {
+      "city": "Scampia, Napoli, NA",
+      "lat": 40.89361,
+      "lng": 14.23822
+    },
+    "art": {
+      "artist_name": "Jorit",
+      "artist_ig": "https://www.instagram.com/jorit",
+      "image_url": "https://www.sporteimpianti.it/wp-content/uploads/2020/03/kobe3-gall.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "buona"
+    }
+  },
+  {
+    "id": "mestieri-torino",
+    "name": "Playground di Piazza dei Mestieri",
+    "location": {
+      "city": "Torino, TO",
+      "lat": 45.08072,
+      "lng": 7.65345
+    },
+    "art": {
+      "artist_name": "Truly Design",
+      "artist_ig": "https://www.instagram.com/trulydesigncrew/",
+      "image_url": "https://images.divisare.com//images/f_auto,q_auto,w_800/v1499414630/copllu9zqe1p8xoob4fb/truly-urban-artists-playground.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "carra-alessandria",
+    "name": "Playground Carlo Carrà",
+    "location": {
+      "city": "Alessandria, AL",
+      "lat": 44.91264,
+      "lng": 8.61895
+    },
+    "art": {
+      "artist_name": "Gummy Gue",
+      "artist_ig": "https://www.instagram.com/gummy_gue/",
+      "image_url": "https://www.neverendingseason.com/wp-content/uploads/2019/08/playground_carra_alessandria_00-732x380.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "colleoppio-roma",
+    "name": "Playground Colle Oppio (Kevin Durant Court)",
+    "location": {
+      "city": "Roma, RM",
+      "lat": 41.89201,
+      "lng": 12.49603
+    },
+    "art": {
+      "artist_name": "Piskv",
+      "artist_ig": "https://www.instagram.com/mr_piskv/",
+      "image_url": "https://images.imagerenderer.com/images/artworkimages/mediumlarge/3/basketball-court-at-colle-oppio-park-fabrizio-troiani.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "scalo-sanlorenzo-roma",
+    "name": "Playground Scalo San Lorenzo",
+    "location": {
+      "city": "Roma, RM",
+      "lat": 41.89544,
+      "lng": 12.51888
+    },
+    "art": {
+      "artist_name": "Piskv",
+      "artist_ig": "https://www.instagram.com/mr_piskv/",
+      "image_url": "https://cdn.zero.eu/uploads/2020/12/campetto-basket-passamonti.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "graziola-faenza",
+    "name": "Playground Graziola (Campetto V.L.C.)",
+    "location": {
+      "city": "Faenza, RA",
+      "lat": 44.29051,
+      "lng": 11.87002
+    },
+    "art": {
+      "artist_name": "Giulio Vesprini",
+      "artist_ig": "https://instagram.com/giuliovesprini",
+      "image_url": "https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/625973771_18128248393524124_5799209939097403360_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzQwMzI2ODA0MDM0NTAyNTc2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuNTk3LnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=1FLJAXlZSkgQ7kNvwF2y33H&_nc_oc=Adoz82_01RP9MoWbrhhzShcy1VG_Tj5xH8Dqle8_OBLH_9QBWmQ2oM2F2ZdbNK0Q5Es&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=tEVfBqsKPViLXN67Y2JiwQ&_nc_ss=7b689&oh=00_AQBU1WNrDX2xjtt7uJHC6NIXUsmbIbwCpwcvTcZYnpaVNQ&oe=6A6FC684"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "parcodelmare-rimini",
+    "name": "Red Bull Half Court Parco del Mare",
+    "location": {
+      "city": "Rimini, RN",
+      "lat": 44.06733,
+      "lng": 12.57815
+    },
+    "art": {
+      "artist_name": "Truly Design",
+      "artist_ig": "https://www.instagram.com/trulydesigncrew/",
+      "image_url": ""
+    },
+    "specs": {
+      "hoops": 1,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "barona-milano",
+    "name": "Playground Barona Via De Pretis",
+    "location": {
+      "city": "Milano, MI",
+      "lat": 45.43714,
+      "lng": 9.15546
+    },
+    "art": {
+      "artist_name": "Pao",
+      "artist_ig": "https://www.instagram.com/paopao_island/",
+      "image_url": "https://needlecrowd.com/wp-content/uploads/Ready.Set_.Dunk_.2-1536x1024.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": false,
+      "surface": "buona"
+    }
+  },
+  {
+    "id": "vialesarca-milano",
+    "name": "Red Bull Half Court Viale Sarca",
+    "location": {
+      "city": "Milano, MI",
+      "lat": 45.52552,
+      "lng": 9.20455
+    },
+    "art": {
+      "artist_name": "Piskv",
+      "artist_ig": "https://www.instagram.com/mr_piskv/",
+      "image_url": "priskv.jpg"
+    },
+    "specs": {
+      "hoops": 1,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "parco2giugno-bari",
+    "name": "Playground Parco 2 Giugno ",
+    "location": {
+      "city": "Bari, BA",
+      "lat": 41.10265,
+      "lng": 16.87363
+    },
+    "art": {
+      "artist_name": "Comune di Bari",
+      "artist_ig": "",
+      "image_url": "https://www.lagazzettadelmezzogiorno.it/resizer/818/539/false/1568197826780.jpg--.jpg?1568197826000"
+    },
+    "specs": {
+      "hoops": 4,
+      "lighting": true,
+      "surface": "buona"
+    }
+  },
+  {
+    "id": "nettuno-catania",
+    "name": "Playground Piazza Nettuno (info parziali)",
+    "location": {
+      "city": "Catania, CT",
+      "lat": 37.52585,
+      "lng": 15.11186
+    },
+    "art": {
+      "artist_name": "Comune di Catania / FIP",
+      "artist_ig": "https://www.instagram.com/federbasket/",
+      "image_url": "https://sicilia.fip.it/wp-content/uploads/2023/12/piazza-nettuno-1-1536x1152.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "buona"
+    }
+  },
+  {
+    "id": "goisis-bergamo",
+    "name": "Campetto Parco Goisis (info parziali)",
+    "location": {
+      "city": "Bergamo, BG",
+      "lat": 45.71032,
+      "lng": 9.68004
+    },
+    "art": {
+      "artist_name": "Comune di Bergamo",
+      "artist_ig": "",
+      "image_url": "https://benprogetti.it/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-04-at-17.14.59-3-1536x1152.jpeg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": false,
+      "surface": "media"
+    }
+  },
+  {
+    "id": "lunetta-gamberini-bologna",
+    "name": "Red Bull Half Court Lunetta Gamberini",
+    "location": {
+      "city": "Bologna, BO",
+      "lat": 44.48275,
+      "lng": 11.36531
+    },
+    "art": {
+      "artist_name": "Truly Design",
+      "artist_ig": "https://www.instagram.com/trulydesigncrew/",
+      "image_url": "https://media.philstar.com/photos/2025/10/30/red-bull-half-court-national-finals_2025-10-30_12-41-28.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "vialekant-roma",
+    "name": "Playground Viale Kant",
+    "location": {
+      "city": "Roma, RM",
+      "lat": 41.93921,
+      "lng": 12.55734
+    },
+    "art": {
+      "artist_name": "Piskv",
+      "artist_ig": "https://www.instagram.com/mr_piskv/",
+      "image_url": "https://www.basketroma.net/images/foto/Campo.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "famagosta-cuneo",
+    "name": "NUoVO playground ",
+    "location": {
+      "city": "Cuneo, PI",
+      "lat": 45.43812,
+      "lng": 9.16745
+    },
+    "art": {
+      "artist_name": "Gummy Gue / Andrea",
+      "artist_ig": "https://www.instagram.com/gummy_gue/",
+      "image_url": "https://nelr.it/wp-content/uploads/2023/07/21072023-_Q2A0876-1024x683.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "struttura-g053-santelpidio",
+    "name": "Campo con Vista Mare G0054",
+    "location": {
+      "city": "Sant'Elpidio a Mare, FM",
+      "lat": 43.266362,
+      "lng": 13.756375
+    },
+    "art": {
+      "artist_name": "Sconosciuto",
+      "artist_ig": "",
+      "image_url": "campoLungomarePOrt.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "parcoschuster-roma",
+    "name": "Playground Parco Schuster Tiberis",
+    "location": {
+      "city": "Roma, RM",
+      "lat": 41.85942,
+      "lng": 12.48011
+    },
+    "art": {
+      "artist_name": "Greg Jager",
+      "artist_ig": "https://instagram.com/greg.jager",
+      "image_url": "gregjeager.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "tempietto-reggiocalabria",
+    "name": "Playground Tempietto (Kobe Bryant Tribute)",
+    "location": {
+      "city": "Reggio Calabria, RC",
+      "lat": 38.10377,
+      "lng": 15.63688
+    },
+    "art": {
+      "artist_name": "Collettivo locale (info parziali)",
+      "artist_ig": "",
+      "image_url": "https://www.citynow.it/wp-content/uploads/sites/5/2024/08/parco-urbano-tempietto-reggio-8.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "buona"
+    }
+  },
+  {
+    "id": "tamburi-taranto",
+    "name": "Lost & Found Arena",
+    "location": {
+      "city": "Taranto, TA",
+      "lat": 40.461651,
+      "lng": 17.27666
+    },
+    "art": {
+      "artist_name": "Comune di Taranto",
+      "artist_ig": "",
+      "image_url": "TARATOplayground.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": false,
+      "surface": "media"
+    }
+  },
+  {
+    "id": "campodimarte-StreetBasketPrato",
+    "name": "Playground del Serraglio Federico “Yoghi” Giuntoni",
+    "location": {
+      "city": "Prato ,Toscana",
+      "lat": 43.885679,
+      "lng": 11.098976
+    },
+    "art": {
+      "artist_name": "Sconosciuto",
+      "artist_ig": "",
+      "image_url": "https://pratosfera.com/wp-content/uploads/2017/08/basket-08.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "buona"
+    }
+  },
+  {
+    "id": "cristore-trento",
+    "name": "parco levi Montalcini",
+    "location": {
+      "city": "Trento, TN",
+      "lat": 46.048707,
+      "lng": 11.12357
+    },
+    "art": {
+      "artist_name": "Sconosciuto",
+      "artist_ig": "",
+      "image_url": "https://www.rainews.it/cropgd/806x453/dl/img/2025/06/24/1750777187784_beli.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": false,
+      "surface": "media"
+    }
+  },
+  {
+    "id": "parcorobinson-milano",
+    "name": "Coca Cola Streetpark Robinson",
+    "location": {
+      "city": "Milano, MI",
+      "lat": 45.43422,
+      "lng": 9.15588
+    },
+    "art": {
+      "artist_name": "Comune di Milano",
+      "artist_ig": "",
+      "image_url": "https://in-rete.net/wp-content/uploads/2016/10/Coca-Cola-parco-Robinson_2016-10-03-1-768x501.jpeg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "buona"
+    }
+  },
+  {
+    "id": "struttura-g019-monteurano",
+    "name": "Struttura G019",
+    "location": {
+      "city": "Monte Urano, FM",
+      "lat": 43.20455,
+      "lng": 13.67389
+    },
+    "art": {
+      "artist_name": "Giulio Vesprini",
+      "artist_ig": "https://instagram.com/giuliovesprini",
+      "image_url": "monteUrbano.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "celadina-bergamo",
+    "name": "Playground Celadina : Carpetto",
+    "location": {
+      "city": "Bergamo, BG",
+      "lat": 45.69472,
+      "lng": 9.70425
+    },
+    "art": {
+      "artist_name": "Ale Senso",
+      "artist_ig": "https://www.instagram.com/sensoale/",
+      "image_url": "https://www.alesenso.it/cms/uploads/carpetto-01.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "fantiniclub-cervia",
+    "name": "Red Bull Half Court Fantini Club",
+    "location": {
+      "city": "Cervia, RA",
+      "lat": 44.26615,
+      "lng": 12.35532
+    },
+    "art": {
+      "artist_name": "Truly Design",
+      "artist_ig": "https://www.instagram.com/trulydesigncrew/",
+      "image_url": "https://truly-design.com/wp-content/uploads/2023/03/01_TrulyDesign_Basketball_Court_Redbull_Moab_Court_Rimini.jpg"
+    },
+    "specs": {
+      "hoops": 1,
+      "lighting": true,
+      "surface": "ottima"
+    }
+  },
+  {
+    "id": "kobe-padova",
+    "name": "Kobe Playground 049",
+    "location": {
+      "city": "Padova, PD",
+      "lat": 45.419897,
+      "lng": 11.875756
+    },
+    "art": {
+      "artist_name": "Collettivo locale ",
+      "artist_ig": "",
+      "image_url": "https://img1.boatcdn.com/review_img/e343cfff8e590350d57d3fcce1c817a7"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "buona"
+    }
+  },
+  {
+    "id": "sanbartolo-firenze",
+    "name": "Playground San Bartolo a Cintoia ",
+    "location": {
+      "city": "Firenze, FI",
+      "lat": 43.76632,
+      "lng": 11.20012
+    },
+    "art": {
+      "artist_name": "Comune di Firenze",
+      "artist_ig": "",
+      "image_url": "https://www.isolottolegnaia.it/wp-content/uploads/2022/05/parco-San-Bartolo-a-Cintoia-cavallaccio-campo-da-basket-780x405.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "buona"
+    }
+  },
+  {
+    "id": "piazzamagione-palermo",
+    "name": "Playground Piazza Magione (info parziali)",
+    "location": {
+      "city": "Palermo, PA",
+      "lat": 38.11475,
+      "lng": 13.36712
+    },
+    "art": {
+      "artist_name": "Comune di  Palermo",
+      "artist_ig": "",
+      "image_url": "https://assets-cf.armani.com/image/upload/f_auto,q_auto,ar_16:9,w_1638,c_lfill/01_-_Piazza_Apromonte__13_16.9"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "malandata"
+    }
+  },
+  {
+    "id": "japigia-bari",
+    "name": "Playground Japigia ",
+    "location": {
+      "city": "Bari, BA",
+      "lat": 41.10765,
+      "lng": 16.89988
+    },
+    "art": {
+      "artist_name": "Comune di Bari",
+      "artist_ig": "",
+      "image_url": "https://www.ilgiornaleditalia.it/resizer/640/-1/true/wp-images/2020/09/basket_campi_pfu_ufs-kuoE-1280x960%40Web.jpg--.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "media"
+    }
+  },
+  {
+    "id": "nei-monza",
+    "name": "Playground Centro NEI (info parziali)",
+    "location": {
+      "city": "Monza, MB",
+      "lat": 45.58021,
+      "lng": 9.27988
+    },
+    "art": {
+      "artist_name": "Sconosciuto",
+      "artist_ig": "",
+      "image_url": "MONZA.jpg"
+    },
+    "specs": {
+      "hoops": 2,
+      "lighting": true,
+      "surface": "buona"
+    }
+  }
+]

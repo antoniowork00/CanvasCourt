@@ -1,0 +1,500 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul a {
+  font-family: var(--font-title);
+  font-size: 20px;
+  color: var(--text-main);
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+
+
+}
+
+nav ul a:hover {
+  color: var(--color-primario);
+  transition: ease-in-out 0.3s;
+}
+
+.logo {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.logo span {
+  color: var(--color-primario);
+}
+
+.btn-primary {
+  background-color: var(--color-primario);
+  color: var(--text-main);
+  border: none;
+  padding: 10px 16px;
+  font-family: var(--font-body);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: background 0.25s;
+}
+
+.btn-primary:hover {
+  background-color: #862b0a;
+}
+
+.hamburger {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  display: none;
+  /* Nascosto su desktop */
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburger .checkbox {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger .line {
+  transition: 0.5s;
+  stroke-width: 4px;
+  stroke: var(--text-main);
+  /* Colore iniziale bianco */
+}
+
+.lineTop {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 25;
+}
+
+.lineBottom {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 60;
+}
+
+.lineMid {
+  stroke-dasharray: 40 40;
+}
+
+/* Animazione al check (apertura) */
+.hamburger .checkbox:checked+svg .line {
+  stroke: var(--color-primario);
+  /* Diventa arancio quando attivo */
+}
+
+.hamburger .checkbox:checked+svg .lineTop {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(45deg) translate(-7px, -5px);
+}
+
+.hamburger .checkbox:checked+svg .lineMid {
+  stroke-dashoffset: 40;
+}
+
+.hamburger .checkbox:checked+svg .lineBottom {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(-45deg) translate(-5px, 5px);
+}
+
+
+article {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+/* ---------- Header dell'articolo ---------- */
+article > header {
+  text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--color-primario);
+}
+
+article > header h1 {
+  font-family: var(--font-title);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  color: var(--text-main);
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+article > header p {
+  color: var(--descrizioni);
+  font-size: 1.05rem;
+  max-width: 720px;
+  margin: 0 auto 14px;
+}
+
+
+article hr {
+  border: none;
+  height: 2px;
+  width: 100%;
+  margin: 50px 0;
+  background: linear-gradient(to right,
+      transparent 0%,
+      var(--color-primario) 50%,
+      transparent 100%);
+  opacity: 0.6;
+}
+
+
+article section {
+  margin-bottom: 10px;
+}
+
+article section h2 {
+  font-family: var(--font-title);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: var(--color-primario);
+  letter-spacing: 0.5px;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  text-transform: uppercase;
+}
+
+article section h3 {
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  color: var(--text-main);
+  letter-spacing: 0.5px;
+  margin: 28px 0 12px;
+}
+
+article section p {
+  color: var(--text-main);
+  font-size: 1rem;
+  margin: 0 0 16px;
+}
+
+article section p strong {
+  color: var(--color-primario);
+}
+
+article section p em {
+  color: var(--descrizioni);
+  font-style: italic;
+}
+
+article section ul {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+article section ul li {
+  position: relative;
+  padding: 10px 0 10px 26px;
+  color: var(--text-main);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+article section ul li:last-child {
+  border-bottom: none;
+}
+
+article section ul li::before {
+  content: "\1F3C0"; /* pallone da basket */
+  position: absolute;
+  left: 0;
+  top: 8px;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+article section ul li strong {
+  color: var(--color-primario);
+}
+
+
+article a {
+  color: var(--color-primario);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.25s ease;
+}
+
+article a:hover {
+  color: var(--text-main);
+}
+
+article aside {
+  background-color: var(--bg-surface);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid var(--color-primario);
+  border-radius: 10px;
+  padding: 28px 26px;
+  margin: 40px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+article aside h2 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  color: var(--color-primario);
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+article aside ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: box-counter;
+}
+
+article aside ol li {
+  counter-increment: box-counter;
+  position: relative;
+  padding: 12px 0 12px 46px;
+  color: var(--text-main);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+article aside ol li:last-child {
+  border-bottom: none;
+}
+
+article aside ol li::before {
+  content: counter(box-counter);
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-size: 1rem;
+  color: var(--bg-deep);
+  background-color: var(--color-primario);
+  border-radius: 50%;
+}
+
+article aside ol li strong {
+  color: var(--color-primario);
+}
+
+/* =========================================================
+   FOOTER BIBLIOGRAFIA
+   ========================================================= */
+article footer#bibliografia {
+  background-color: var(--bg-surface);
+  border-radius: 10px;
+  padding: 28px 26px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+article footer#bibliografia h2 {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  color: var(--color-primario);
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+article footer#bibliografia p em {
+  color: var(--descrizioni);
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 18px;
+}
+
+article footer#bibliografia ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: bib-counter;
+}
+
+article footer#bibliografia ol li {
+  counter-increment: bib-counter;
+  position: relative;
+  padding: 10px 0 10px 30px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--descrizioni);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+article footer#bibliografia ol li:last-child {
+  border-bottom: none;
+}
+
+article footer#bibliografia ol li::before {
+  content: "[" counter(bib-counter) "]";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: var(--color-primario);
+  font-weight: 700;
+}
+
+article footer#bibliografia ol li a {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+article footer#bibliografia ol li a:hover {
+  color: var(--color-primario);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  article {
+    padding: 28px 16px 60px;
+  }
+
+  article > header h1 {
+    font-size: 2rem;
+  }
+
+  article section h2 {
+    font-size: 1.5rem;
+  }
+
+  article aside,
+  article footer#bibliografia {
+    padding: 20px 16px;
+  }
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 900px) 1fr;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.polaroid-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.polaroid-sidebar.left  { align-items: flex-end; }
+.polaroid-sidebar.right { align-items: flex-start; }
+
+/* =========================================================
+   SINGOLA POLAROID (ora è un <a> per il :target)
+   ========================================================= */
+.polaroid-card {
+  display: block;
+  text-decoration: none;
+  background: #fefefe;
+  padding: 10px 10px 28px 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45), 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  width: 140px;
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.35s ease;
+  position: sticky;
+  animation: floatPolaroid 4s ease-in-out infinite;
+}
+
+/* Posizioni sticky differenziate */
+.polaroid-card:nth-child(1)  { top: 100px; rotate: -3deg;  animation-delay: 0s;     animation-duration: 4s; }
+.polaroid-card:nth-child(2)  { top: 320px; rotate: 2deg;   animation-delay: -1.4s;  animation-duration: 4.8s; }
+.polaroid-card:nth-child(3)  { top: 540px; rotate: -1.5deg; animation-delay: -2.8s;  animation-duration: 4.2s; }
+.polaroid-card:nth-child(4)  { top: 760px; rotate: 4deg;   animation-delay: -0.7s;  animation-duration: 3.9s; }
+.polaroid-card:nth-child(5)  { top: 980px; rotate: -2.5deg; animation-delay: -2.1s;  animation-duration: 4.5s; }
+.polaroid-card:nth-child(6)  { top: 1200px; rotate: 1deg;  animation-delay: -3.5s;  animation-duration: 4.1s; }
+.polaroid-card:nth-child(7)  { top: 1420px; rotate: -4deg; animation-delay: -0.3s;  animation-duration: 4.7s; }
+.polaroid-card:nth-child(8)  { top: 1640px; rotate: 3deg;  animation-delay: -1.8s;  animation-duration: 3.8s; }
+.polaroid-card:nth-child(9)  { top: 1860px; rotate: -1deg; animation-delay: -2.4s;  animation-duration: 4.4s; }
+.polaroid-card:nth-child(10) { top: 2080px; rotate: 2.5deg; animation-delay: -0.9s;  animation-duration: 4.2s; }
+.polaroid-card:nth-child(11) { top: 2300px; rotate: -3.5deg; animation-delay: -3.1s;  animation-duration: 4.6s; }
+.polaroid-card:nth-child(12) { top: 2520px; rotate: 0.5deg; animation-delay: -1.2s;  animation-duration: 3.7s; }
+
+.polaroid-card:hover {
+  transform: scale(1.12) rotate(0deg);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55), 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+.polaroid-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 1px;
+}
+
+.polaroid-card .caption {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.6rem;
+  text-align: center;
+  color: #444;
+  margin-top: 6px;
+  letter-spacing: 0.4px;
+}
+
+.polaroid-card::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1deg);
+  width: 42px;
+  height: 14px;
+  background: rgba(255, 255, 200, 0.7);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+@keyframes floatPolaroid {
+  0%, 100% { translate: 0 0; }
+  25%      { translate: 0 -7px; }
+  50%      { translate: 0 -2px; }
+  75%      { translate: 0 -9px; }
+}
+/* Responsive: nasconde le polaroid su tablet/phone */
+@media screen and (max-width: 1200px) {
+  .polaroid-sidebar { display: none; }
+  .content-wrapper { grid-template-columns: 1fr; }
+}
