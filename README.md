@@ -17,9 +17,6 @@ A modern web experience dedicated to **street basketball, outdoor courts and urb
 </a>
 
 <br><br>
-
-<img src="images/README/preview.png" alt="CanvasCourt Preview" width="900">
-
 </div>
 
 ---
