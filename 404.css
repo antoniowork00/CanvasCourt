@@ -1,0 +1,1299 @@
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --bg-deep: #121212;
+    --bg-surface: #2a2a2a;
+
+    --color-primario: #fe5314;
+
+    --text-main: #ffffff;
+    --descrizioni: #b3b3b3;
+
+    --font-title: "Bebas Neue", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-mono: "Space Mono", monospace;
+
+    --glow-orange: rgba(254, 83, 20, 0.3);
+
+    --page-x: clamp(20px, 5.5vw, 90px);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+
+    overflow-x: hidden;
+
+    background: var(--bg-deep);
+    color: var(--text-main);
+
+    font-family: var(--font-body);
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.error-page {
+
+    position: relative;
+
+    width: 100%;
+    min-height: 100svh;
+
+    padding:
+        clamp(28px, 5vh, 70px)
+        var(--page-x)
+        clamp(30px, 5vh, 60px);
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 48% 60%,
+            rgba(255, 255, 255, 0.035),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 67% 45%,
+            rgba(255, 255, 255, 0.018),
+            transparent 32%
+        ),
+
+        var(--bg-deep);
+}
+
+
+/* =========================================================
+   BACKGROUND GLOW
+========================================================= */
+
+.background-glow {
+
+    position: absolute;
+
+    width: min(700px, 70vw);
+    height: min(700px, 70vw);
+
+    top: 15%;
+    left: 30%;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.018);
+
+    filter: blur(100px);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.error-header {
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+.logo {
+
+    display: inline-flex;
+    align-items: center;
+
+    font-family: var(--font-title);
+
+    font-size:
+        clamp(19px, 2vw, 30px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -0.8px;
+
+    text-decoration: none;
+}
+
+
+.logo span {
+    color: var(--color-primario);
+}
+
+
+.logo strong {
+    color: var(--text-main);
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.error-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    min-height:
+        calc(100svh - 145px);
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(390px, 0.95fr);
+
+    align-items: center;
+
+    column-gap:
+        clamp(35px, 6vw, 100px);
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.error-main {
+
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    animation:
+        contentIn
+        1s
+        cubic-bezier(.22, 1, .36, 1)
+        .15s
+        both;
+}
+
+
+/* =========================================================
+   404
+========================================================= */
+
+.error-code {
+
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+
+    margin-bottom:
+        clamp(30px, 4.5vh, 55px);
+
+    font-family: var(--font-body);
+
+    font-size:
+        clamp(95px, 11vw, 165px);
+
+    font-weight: 900;
+
+    line-height: .75;
+
+    letter-spacing: -.06em;
+}
+
+
+.error-code .four {
+
+    display: block;
+
+    color:
+        var(--color-primario);
+
+    transform:
+        scaleX(.88);
+
+    transform-origin:
+        center;
+}
+
+
+.error-code .zero {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width:
+        clamp(90px, 9vw, 135px);
+
+    height:
+        clamp(90px, 9vw, 135px);
+}
+
+
+.zero svg {
+
+    display: block;
+
+    width: 82%;
+    height: 82%;
+
+    overflow: visible;
+}
+
+
+.zero .st0 {
+    fill: var(--text-main);
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.error-main h1 {
+
+    display: flex;
+
+    flex-direction: column;
+
+    max-width: 850px;
+
+    font-family: var(--font-body);
+
+    font-size:
+        clamp(44px, 5vw, 78px);
+
+    font-weight: 300;
+
+    line-height: .87;
+
+    letter-spacing:
+        clamp(-3px, -.25vw, -1.5px);
+}
+
+
+.error-main h1 .line {
+    display: block;
+}
+
+
+.error-main h1 em {
+
+    color:
+        var(--color-primario);
+
+    font-style: normal;
+
+    font-weight: 300;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.error-description {
+
+    margin-top:
+        clamp(35px, 5.5vh, 65px);
+
+    max-width: 620px;
+
+    color:
+        var(--descrizioni);
+
+    font-family:
+        var(--font-mono);
+
+    font-size:
+        clamp(12px, 1.1vw, 17px);
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   RIGHT VISUAL
+========================================================= */
+
+.error-visual {
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    min-width: 0;
+
+    animation:
+        visualIn
+        1.1s
+        cubic-bezier(.22, 1, .36, 1)
+        .25s
+        both;
+}
+
+
+.found-wrapper {
+
+    position: relative;
+
+    width: 100%;
+
+    transition:
+        transform .2s ease-out;
+
+    will-change:
+        transform;
+}
+
+
+/* =========================================================
+   BACKGROUND TEXT
+========================================================= */
+
+.found-shadow {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+    padding-left:
+        clamp(15px, 2vw, 35px);
+
+    font-size:
+        clamp(70px, 8vw, 135px);
+
+    font-weight: 900;
+
+    line-height: .8;
+
+    letter-spacing:
+        -.07em;
+
+    color:
+        rgba(255, 255, 255, .025);
+
+    pointer-events: none;
+
+    user-select: none;
+}
+
+
+/* =========================================================
+   PAGE NOT FOUND
+========================================================= */
+
+.content-right {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+    width: 100%;
+}
+
+
+.text-overlay {
+
+    position: relative;
+
+    z-index: 1;
+
+    font-size:
+        clamp(66px, 7vw, 125px);
+
+    font-weight: 900;
+
+    line-height: .82;
+
+    letter-spacing:
+        -.065em;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+.text-overlay-line {
+
+    display: flex;
+
+    align-items: center;
+
+    gap:
+        clamp(7px, 1vw, 16px);
+
+    margin:
+        -.06em 0;
+}
+
+
+.text-gray {
+
+    color:
+        var(--descrizioni);
+
+    -webkit-text-stroke:
+        1px var(--text-main);
+
+    text-shadow:
+        0 4px 10px rgba(0, 0, 0, .5);
+}
+
+
+.text-white {
+
+    color:
+        var(--text-main);
+
+    font-style: italic;
+
+    text-shadow:
+        0 4px 10px rgba(0, 0, 0, .7);
+}
+
+
+
+
+
+/* =========================================================
+   HOME BUTTON
+========================================================= */
+
+.home-button {
+
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 230px;
+    height: 56px;
+
+    margin-top: 30px;
+
+    gap: 14px;
+
+    border:
+        1px solid var(--descrizioni);
+
+    border-radius: 9px;
+
+    color:
+        var(--text-main);
+
+    background:
+        transparent;
+
+    font-family:
+        var(--font-body);
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    overflow: hidden;
+
+    transition:
+
+        border-color .35s ease,
+
+        transform .35s ease;
+}
+
+
+.home-button::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        var(--color-primario);
+
+    transform:
+        translateY(100%);
+
+    transition:
+        transform .35s ease;
+}
+
+
+.button-text,
+.home-icon {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.home-icon {
+
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+
+    stroke:
+        currentColor;
+
+    stroke-width: 1.6;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    transition:
+        transform .35s ease;
+}
+
+
+.home-button:hover {
+
+    border-color:
+        var(--color-primario);
+
+    transform:
+        translateY(-3px);
+}
+
+
+.home-button:hover::before {
+    transform:
+        translateY(0);
+}
+
+
+.home-button:hover .home-icon {
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+.logo {
+
+    animation:
+        logoIn
+        .8s
+        ease
+        both;
+}
+
+
+@keyframes logoIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(-15px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes contentIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateX(-45px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateX(0);
+    }
+}
+
+
+@keyframes visualIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateX(45px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateX(0);
+    }
+}
+
+
+/* =========================================================
+   LAPTOP
+   1051px — 1250px
+========================================================= */
+
+@media (min-width: 1051px) and (max-width: 1250px) {
+
+    .error-container {
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(350px, .85fr);
+
+        column-gap: 35px;
+    }
+
+
+    .error-main h1 {
+
+        font-size:
+            clamp(65px, 6vw, 72px);
+    }
+
+
+    .error-code {
+
+        font-size:
+            clamp(90px, 11vw, 135px);
+    }
+
+
+    .error-code .zero {
+
+        width: 110px;
+        height: 110px;
+    }
+
+
+    .text-overlay {
+
+        font-size:
+            clamp(58px, 6.7vw, 95px);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   <= 1050px
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    body {
+        overflow-y: auto;
+    }
+
+
+    .error-page {
+
+        min-height: 100svh;
+
+        padding:
+
+            40px
+
+            clamp(28px, 5vw, 60px)
+
+            60px;
+    }
+
+
+    .error-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        min-height: auto;
+
+        gap: 0;
+
+        padding-top:
+            clamp(65px, 10vh, 100px);
+    }
+
+
+    /* ================================================
+       REMOVE DESKTOP VISUAL COMPLETELY
+    ================================================= */
+
+    .error-visual {
+
+        display: none;
+    }
+
+
+    .error-code {
+
+        margin-bottom:
+            clamp(30px, 5vh, 45px);
+
+        font-size:
+            clamp(90px, 15vw, 125px);
+    }
+
+
+    .error-code .zero {
+
+        width:
+            clamp(85px, 13vw, 110px);
+
+        height:
+            clamp(85px, 13vw, 110px);
+    }
+
+
+    .error-main h1 {
+
+        max-width: 700px;
+
+        font-size:
+            clamp(42px, 7vw, 62px);
+    }
+
+
+    .error-description {
+
+        margin-top:
+            clamp(35px, 6vh, 50px);
+
+        font-size:
+            14px;
+    }
+
+
+    .home-button {
+
+        margin-top:
+            30px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 760px
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .error-page {
+
+        padding:
+
+            28px
+
+            22px
+
+            90px;
+    }
+
+
+    .logo {
+
+        font-size:
+            21px;
+    }
+
+
+    .error-container {
+
+        padding-top:
+            clamp(55px, 10vh, 80px);
+    }
+
+
+    .error-main {
+
+        width: 100%;
+    }
+
+
+    /* ================================================
+       404
+    ================================================= */
+
+    .error-code {
+
+        margin-bottom:
+            32px;
+
+        font-size:
+            clamp(76px, 21vw, 105px);
+
+        letter-spacing:
+            -.08em;
+    }
+
+
+    .error-code .zero {
+
+        width:
+            clamp(68px, 19vw, 90px);
+
+        height:
+            clamp(68px, 19vw, 90px);
+    }
+
+
+    /* ================================================
+       TITLE
+    ================================================= */
+
+    .error-main h1 {
+
+        max-width: 100%;
+
+        font-size:
+            clamp(35px, 10.5vw, 52px);
+
+        line-height: .9;
+
+        letter-spacing:
+            -.05em;
+    }
+
+
+    /* ================================================
+       DESCRIPTION
+    ================================================= */
+
+    .error-description {
+
+        margin-top:
+            32px;
+
+        max-width:
+            100%;
+
+        font-size:
+            12px;
+    }
+
+
+    /* ================================================
+       MOBILE BUTTON
+    ================================================= */
+
+    .home-button {
+
+        position: fixed;
+
+        right:
+            22px;
+
+        bottom:
+            22px;
+
+        z-index:
+            100;
+
+        width:
+            60px;
+
+        height:
+            60px;
+
+        margin:
+            0;
+
+        border:
+            none;
+
+        border-radius:
+            50%;
+
+        background:
+            var(--color-primario);
+
+        color:
+            #ffffff;
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, .45);
+    }
+
+
+    .home-button::before {
+        display: none;
+    }
+
+
+    .button-text {
+        display: none;
+    }
+
+
+    .home-icon {
+
+        width:
+            27px;
+
+        height:
+            27px;
+
+        stroke:
+            #ffffff;
+
+        transition:
+            none;
+    }
+
+
+    .home-button:hover {
+
+        border:
+            none;
+
+        background:
+            var(--color-primario);
+
+        transform:
+            translateY(-3px) scale(1.04);
+    }
+
+
+    .home-button:hover .home-icon {
+
+        transform:
+            none;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 430px
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .error-page {
+
+        padding:
+
+            22px
+
+            18px
+
+            82px;
+    }
+
+
+    .logo {
+
+        font-size:
+            19px;
+    }
+
+
+    .error-container {
+
+        padding-top:
+            48px;
+    }
+
+
+    /* ================================================
+       404
+    ================================================= */
+
+    .error-code {
+
+        width:
+            fit-content;
+
+        margin-bottom:
+            27px;
+
+        font-size:
+            clamp(68px, 21vw, 82px);
+
+        letter-spacing:
+            -.08em;
+    }
+
+
+    .error-code .zero {
+
+        width:
+            clamp(58px, 17vw, 68px);
+
+        height:
+            clamp(58px, 17vw, 68px);
+    }
+
+
+    /* ================================================
+       TITLE
+    ================================================= */
+
+    .error-main h1 {
+
+        font-size:
+            clamp(31px, 9.7vw, 38px);
+
+        line-height:
+            .9;
+
+        letter-spacing:
+            -.045em;
+    }
+
+
+    /* ================================================
+       DESCRIPTION
+    ================================================= */
+
+    .error-description {
+
+        margin-top:
+            28px;
+
+        font-size:
+            11px;
+
+        line-height:
+            1.5;
+    }
+
+
+    /* ================================================
+       BUTTON
+    ================================================= */
+
+    .home-button {
+
+        right:
+            16px;
+
+        bottom:
+            16px;
+
+        width:
+            56px;
+
+        height:
+            56px;
+    }
+
+
+    .home-icon {
+
+        width:
+            24px;
+
+        height:
+            24px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   <= 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .error-page {
+
+        padding-left:
+            15px;
+
+        padding-right:
+            15px;
+    }
+
+
+    .logo {
+        font-size:
+            18px;
+    }
+
+
+    .error-container {
+
+        padding-top:
+            42px;
+    }
+
+
+    .error-code {
+
+        margin-bottom:
+            24px;
+
+        font-size:
+            65px;
+    }
+
+
+    .error-code .zero {
+
+        width:
+            55px;
+
+        height:
+            55px;
+    }
+
+
+    .error-main h1 {
+
+        font-size:
+            29px;
+
+        letter-spacing:
+            -.04em;
+    }
+
+
+    .error-description {
+
+        font-size:
+            10px;
+    }
+
+
+    .home-button {
+
+        right:
+            14px;
+
+        bottom:
+            14px;
+
+        width:
+            52px;
+
+        height:
+            52px;
+    }
+
+
+    .home-icon {
+
+        width:
+            22px;
+
+        height:
+            22px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            0.01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            0.01ms !important;
+
+        scroll-behavior:
+            auto !important;
+    }
+
+}
+
